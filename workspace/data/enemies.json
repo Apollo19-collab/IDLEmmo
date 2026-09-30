@@ -1,4 +1,0 @@
-[
-    {"id": "goblin_raider", "name": "Goblin Raider", "level": 1, "baseHP": 50, "attackPower": 8, "xpReward": 12, "goldReward": 5, "lootTable": ["basic_sword"], "difficultyMultiplier": 1},
-    {"id": "ashen_wolf", "name": "Ashwood Wolf", "level": 3, "baseHP": 90, "attackPower": 12, "xpReward": 35, "goldReward": 15, "lootTable": []}
-]

@@ -1,3 +1,0 @@
-[
-    {"id": "q_intro", "title": "A Call to Adventure", "description": "Speak with the Village Elder.", "type": "Progression", "requirements": {"zoneId": "village"}, "progressGoal": 1, "rewards": {"xp": 100, "gold": 50}, "isCompleted": false}
-]
