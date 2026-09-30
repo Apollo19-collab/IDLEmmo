@@ -1,0 +1,16 @@
+# Dependencies
+/node_modules
+
+# Environment Variables (NEVER COMMIT SECRET KEYS!)
+.env
+.local
+
+# Build Outputs / Compiled Files
+/dist
+/build
+/client-build
+
+# Local State & Temporary Files
+*.log
+__pycache__/
+.DS_Store
