@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eternal Odyssey: Idle RPG</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="padding-bottom: 50px;">
+
+    <header>
+        <h1>The Realm of Aethel</h1>
+        <div id="character-status">
+            <p id="player-level">Level: 1</p>
+            <p>Location: Starting Village</p>
+        </div>
+    </header>
+
+    <main>
+        <!-- NEW: Resource Display Area -->
+        <section id="resources" style="border: 1px solid #6a5acd; padding: 15px; margin-bottom: 20px; border-radius: 8px;">
+             <h3 style="margin-top: 0;">Inventory & Resources</h3>
+             <div class="resource-display">
+                <span style="margin-right: 40px; font-size: 1.1em;">💰 Gold: <span id="gold-value">50</span></span>
+                <span style="margin-right: 40px; font-size: 1.1em;">🌿 Materials: <span id="material-value">10</span></span>
+                <span style="font-size: 1.1em;">✨ Rare Essence: <span id="essence-value">0</span></span>
+            </div>
+        </section>
+
+        <!-- This area will dynamically display the current active skill and its resources/upgrades -->
+        <section id="skill-panel">
+            <h2 id="active-skill-title">Active Skill: Combat Mastery</h2>
+            <div class="resource-display" style="margin-bottom: 15px;">
+                <span>Energy: <span id="energy-value">100</span> / 100</span>
+            </div>
+
+            <button id="action-button" onclick="performAction()">Engage</button>
+
+            <h3 style="margin-top: 20px;">Skill Progress</h3>
+            <div id="progress-bar-container">
+                <!-- Skill progress bar will be rendered here -->
+            </div>
+             <!-- Upgrade/Shop Section -->
+            <div id="upgrade-shop" style="border-top: 1px dashed #6a5acd; padding-top: 15px;">
+                 <h3 style="margin-bottom: 15px;">Academy of Advancement</h3>
+                 <button id="upgrade-button" onclick="attemptUpgradePurchase('damage')">Train Combat Skill (+Damage) [Cost: N/A]</button>
+                 <button id="shop-upgrade-yield" onclick="attemptUpgradePurchase('yield')">Study Botany (+Yield) [Cost: 150 Gold]</button>
+            </div>
+        </section>
+
+        <!-- Navigation to the main skill areas (Combat, Gather, Crafting) -->
+        <aside id="skill-navigation">
+            <h3 style="margin-top: 0;">Regions & Skills</h3>
+            <button class="region-btn active" data-skill="combat">🛡️ Combat Mastery</button>
+            <button class="region-btn" data-skill="gathering">🌿 Gathering</button>
+            <button class="region-btn" data-skill="crafting">⚒️ Crafting Arts</button>
+        </aside>
+
+        <!-- Log/Output area for messages and events -->
+        <div id="game-log">
+            <h3 style="margin-top: 0;">Event Log</h3>
+            <p>Welcome to Aethel. Your journey begins!</p>
+        </div>
+    </main>
+
+    <footer style="text-align: center; padding: 15px; border-top: 1px solid #6a5acd;">
+        <p>&copy; 2026 Eternal Odyssey (Phase 3 Build)</p>
+    </footer>
+
+    <script src="game.js"></script>
+</body>
+</html>

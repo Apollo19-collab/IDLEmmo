@@ -1,0 +1,102 @@
+/* General CSS for the game UI */
+
+body {
+    font-family: 'Palatino Linotype', Georgia, serif; /* Fantasy feel */
+    background-color: #1a1a2e; /* Deep blue/purple background */
+    color: #e0e0ff;
+    margin: 0;
+    padding: 0;
+}
+
+#game-log {
+    background-color: #2c2c54;
+    border-top: 2px solid #6a5acd; /* Purple accent */
+    padding: 15px;
+    margin-top: 20px;
+    height: 200px;
+    overflow-y: auto;
+}
+
+#game-log p {
+    margin: 5px 0;
+    color: #cccccc;
+}
+
+/* Layout structure */
+main {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+#skill-navigation {
+    flex-basis: 200px; /* Fixed sidebar width */
+    padding: 15px;
+    background-color: #24243e;
+    border-radius: 8px;
+    height: fit-content;
+}
+
+#skill-panel {
+    flex-grow: 2; /* Takes up the remaining space */
+}
+
+/* Buttons and Interactions */
+button.region-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    background-color: #4b0082; /* Indigo */
+    color: white;
+    border: none;
+    transition: background-color 0.2s;
+}
+
+button.region-btn:hover {
+    background-color: #6a5acd;
+}
+
+#action-button {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    background-color: #8b0000; /* Red for primary action */
+    color: white;
+}
+
+#action-button:disabled {
+    background-color: #4d4d4d;
+    cursor: not-allowed;
+}
+
+/* Status and Progress */
+#character-status {
+    padding: 10px;
+    border: 1px solid #6a5acd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.resource-display span {
+    margin-right: 20px;
+}
+
+#progress-bar-container {
+    width: 100%;
+    background-color: #3a3a6e;
+    border-radius: 5px;
+    height: 20px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+#progress-bar {
+    height: 100%;
+    width: 0%; /* Initial width */
+    background-color: #ffd700; /* Gold color for progress */
+    transition: width 0.5s ease-out;
+    text-align: center;
+    line-height: 20px;
+}
