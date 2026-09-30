@@ -1,0 +1,5 @@
+[
+    {"id": "basic_sword", "name": "Iron Shortsword", "rarity": "Common", "levelRequirement": 1, "stats": {"Attack Power": 5}, "sellValue": 20},
+    {"id": "leather_vest", "name": "Tanned Vestment", "rarity": "Common", "levelRequirement": 1, "stats": {"Defense": 3}, "sellValue": 30},
+    {"id": "mana_crystal", "name": "Minor Mana Crystal", "rarity": "Uncommon", "levelRequirement": 2, "stats": {}, "sellValue": 50}
+]

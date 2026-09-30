@@ -1,0 +1,41 @@
+[
+    {
+        "id": "warrior",
+        "name": "Ironclad Vanguard",
+        "description": "Masters of heavy armor and frontline combat.",
+        "baseStats": {
+            "Strength": 15,
+            "Vitality": 12,
+            "Defense": 10,
+        },
+        "combatFocus": "Melee Tanking/DPS",
+        "abilities": ["Heavy Strike", "Shield Wall"],
+        "equipmentPreference": ["Weapon", "Chest"]
+    },
+    {
+        "id": "arcanist",
+        "name": "Aether Weaver",
+        "description": "Channel pure magical energy into devastating spells.",
+        "baseStats": {
+            "Intelligence": 18,
+            "Mana/Energy": 15,
+            "Magic Power": 12
+        },
+        "combatFocus": "Ranged Magic DPS",
+        "abilities": ["Arcane Bolt", "Frost Nova"],
+        "equipmentPreference": ["Amulet", "Weapon"]
+    },
+    {
+        "id": "swiftblade",
+        "name": "Shadow Stalker",
+        "description": "Relies on agility, precision, and misdirection.",
+        "baseStats": {
+            "Dexterity": 16,
+            "Critical Chance": 10,
+            "Movement/Action Speed": 15
+        },
+        "combatFocus": "High Burst DPS/Utility",
+        "abilities": ["Shadow Step", "Quick Stab"],
+        "equipmentPreference": ["Gloves", "Boots"]
+    }
+]

@@ -1,0 +1,4 @@
+[
+    {"id": "village", "name": "Oakhaven Village", "description": "The peaceful starting point of your journey.", "minLevel": 1, "maxLevel": 10, "enemiesAvailable": ["goblin_raider"], "xpMultiplier": 1.0, "goldMultiplier": 1.0},
+    {"id": "whispering_forest", "name": "Whispering Forest Edge", "description": "A dense area where ancient magic lingers.", "minLevel": 5, "maxLevel": 20, "enemiesAvailable": ["ashen_wolf"], "xpMultiplier": 1.2, "goldMultiplier": 1.1}
+]
